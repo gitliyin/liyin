@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-15 12:22:37 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.liyin.liger.sys.model.SysUserRole" table="sys_user_role" catalog="bams">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="java.lang.Long">
+            <column name="user_id">
+                <comment>&#211;&#195;&#187;&#167;ID</comment>
+            </column>
+        </property>
+        <property name="roleId" type="java.lang.Long">
+            <column name="role_id">
+                <comment>&#189;&#199;&#201;&#171;ID</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

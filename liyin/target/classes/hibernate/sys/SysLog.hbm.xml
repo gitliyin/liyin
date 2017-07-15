@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-15 12:22:37 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.liyin.liger.sys.model.SysLog" table="sys_log" catalog="bams">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="50">
+                <comment>&#211;&#195;&#187;&#167;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="operation" type="string">
+            <column name="operation" length="50">
+                <comment>&#211;&#195;&#187;&#167;&#178;&#217;&#215;&#247;</comment>
+            </column>
+        </property>
+        <property name="method" type="string">
+            <column name="method" length="200">
+                <comment>&#199;&#235;&#199;&#243;&#183;&#189;&#183;&#168;</comment>
+            </column>
+        </property>
+        <property name="params" type="string">
+            <column name="params" length="5000">
+                <comment>&#199;&#235;&#199;&#243;&#178;&#206;&#202;&#253;</comment>
+            </column>
+        </property>
+        <property name="ip" type="string">
+            <column name="ip" length="64">
+                <comment>IP&#181;&#216;&#214;&#183;</comment>
+            </column>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="create_date" length="19">
+                <comment>&#180;&#180;&#189;&#168;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

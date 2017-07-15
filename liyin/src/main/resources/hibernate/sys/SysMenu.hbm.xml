@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-15 12:22:37 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.liyin.liger.sys.model.SysMenu" table="sys_menu" catalog="bams">
+        <id name="menuId" type="java.lang.Long">
+            <column name="menu_id" />
+            <generator class="identity" />
+        </id>
+        <property name="parentId" type="java.lang.Long">
+            <column name="parent_id">
+                <comment>&#184;&#184;&#178;&#203;&#181;&#165;ID&#163;&#172;&#210;&#187;&#188;&#182;&#178;&#203;&#181;&#165;&#206;&#170;0</comment>
+            </column>
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="50">
+                <comment>&#178;&#203;&#181;&#165;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="200">
+                <comment>&#178;&#203;&#181;&#165;URL</comment>
+            </column>
+        </property>
+        <property name="perms" type="string">
+            <column name="perms" length="500">
+                <comment>
+                &#202;&#218;&#200;&#168;(&#182;&#224;&#184;&#246;&#211;&#195;&#182;&#186;&#186;&#197;&#183;&#214;&#184;&#244;&#163;&#172;&#200;&#231;&#163;&#186;user:list,user:create)</comment>
+            </column>
+        </property>
+        <property name="type" type="java.lang.Integer">
+            <column name="type">
+                <comment>&#192;&#224;&#208;&#205; 0&#163;&#186;&#196;&#191;&#194;&#188; 1&#163;&#186;&#178;&#203;&#181;&#165; 2&#163;&#186;&#176;&#180;&#197;&#165;</comment>
+            </column>
+        </property>
+        <property name="icon" type="string">
+            <column name="icon" length="50">
+                <comment>&#178;&#203;&#181;&#165;&#205;&#188;&#177;&#234;</comment>
+            </column>
+        </property>
+        <property name="orderNum" type="java.lang.Integer">
+            <column name="order_num">
+                <comment>&#197;&#197;&#208;&#242;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
