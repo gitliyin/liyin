@@ -10,7 +10,7 @@ import com.liyin.liger.sys.model.SysLog;
 import com.liyin.liger.sys.service.SysLogService;
 
 @Service
-public class SysLogServiceImpl extends BaseServiceImpl<SysLogDao,SysLog, SysLogDto>  implements SysLogService{
+public class SysLogServiceImpl extends AbstractBaseServiceImpl<SysLog, SysLogDto>  implements SysLogService{
 
 	@Autowired
 	public SysLogDao baseDao;

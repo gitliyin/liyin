@@ -10,7 +10,7 @@ import com.liyin.liger.sys.model.SysRole;
 import com.liyin.liger.sys.service.SysRoleService;
 
 @Service
-public class SysRoleServiceImpl extends BaseServiceImpl<SysRoleDao, SysRole, SysRoleDto>  implements SysRoleService{
+public class SysRoleServiceImpl extends AbstractBaseServiceImpl<SysRole, SysRoleDto>  implements SysRoleService{
 
 	@Autowired
 	SysRoleDao baseDao;
@@ -19,6 +19,8 @@ public class SysRoleServiceImpl extends BaseServiceImpl<SysRoleDao, SysRole, Sys
 	BaseDao<SysRole> getBaseDaoImpl() {
 		return baseDao;
 	}
+
+	
 	
 	
 }

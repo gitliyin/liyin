@@ -10,7 +10,7 @@ import com.liyin.liger.sys.model.SysUser;
 import com.liyin.liger.sys.service.SysUserService;
 
 @Service
-public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao,SysUser, SysUserDto>  implements SysUserService{
+public class SysUserServiceImpl extends AbstractBaseServiceImpl<SysUser, SysUserDto>  implements SysUserService{
 	
 	@Autowired
 	private SysUserDao baseDao;
@@ -19,6 +19,7 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao,SysUser, SysU
 	BaseDao<SysUser> getBaseDaoImpl() {
 		return baseDao;
 	}
+	
 	
 	
 }

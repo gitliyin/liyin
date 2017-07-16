@@ -31,8 +31,8 @@ public class DaoTest {
     {
     	SysUser o = new SysUser();
     	o.setCreateTime(new Date());
-    	o.setUserId(new Long(166));
-    	o.setUsername("f1");
+    	o.setUserId(new Long(161611));
+    	o.setUsername("f1111");
     	Serializable insert = sysUserService.insert(o);
 		System.out.println(insert);
 //    	

@@ -10,7 +10,7 @@ import com.liyin.liger.sys.model.SysMenu;
 import com.liyin.liger.sys.service.SysMenuService;
 
 @Service
-public class SysMenuServiceImpl extends BaseServiceImpl<SysMenuDao, SysMenu, SysMenuDto>  implements SysMenuService{
+public class SysMenuServiceImpl extends AbstractBaseServiceImpl< SysMenu, SysMenuDto>  implements SysMenuService{
 
 	@Autowired
 	public SysMenuDao baseDao;
@@ -19,4 +19,6 @@ public class SysMenuServiceImpl extends BaseServiceImpl<SysMenuDao, SysMenu, Sys
 	BaseDao<SysMenu> getBaseDaoImpl() {
 		return baseDao;
 	}
+
+	
 }

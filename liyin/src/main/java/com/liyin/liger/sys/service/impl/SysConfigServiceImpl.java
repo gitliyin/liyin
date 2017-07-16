@@ -10,7 +10,7 @@ import com.liyin.liger.sys.model.SysConfig;
 import com.liyin.liger.sys.service.SysConfigService;
 
 @Service
-public class SysConfigServiceImpl extends BaseServiceImpl<SysConfigDao,SysConfig,SysConfigDto> implements SysConfigService{
+public class SysConfigServiceImpl extends AbstractBaseServiceImpl<SysConfig,SysConfigDto> implements SysConfigService{
 
 	@Autowired
 	public SysConfigDao baseDao;
@@ -19,4 +19,6 @@ public class SysConfigServiceImpl extends BaseServiceImpl<SysConfigDao,SysConfig
 	BaseDao<SysConfig> getBaseDaoImpl() {
 		return baseDao;
 	}
+
+	
 }

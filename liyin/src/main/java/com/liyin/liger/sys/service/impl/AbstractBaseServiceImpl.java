@@ -1,18 +1,12 @@
 package com.liyin.liger.sys.service.impl;
 
 import java.io.Serializable;
-import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.context.support.WebApplicationContextUtils;
-
 import com.liyin.liger.sys.dao.BaseDao;
-import com.liyin.liger.sys.dao.SysUserDao;
 import com.liyin.liger.sys.service.BaseService;
-import com.liyin.liger.sys.utils.SpringConfigTool;
 
-public abstract class BaseServiceImpl<DAO,M,D> implements BaseService<M,D>{
+public abstract class AbstractBaseServiceImpl<M,D> implements BaseService<M,D>{
 	
 	/**
 	 * 该方法用于获取子类的dao，用于该类的增删该查方法
