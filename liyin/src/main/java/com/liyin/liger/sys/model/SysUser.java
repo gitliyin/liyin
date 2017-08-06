@@ -10,7 +10,7 @@ import java.util.Date;
  */
 public class SysUser implements java.io.Serializable {
 
-	private Long userId;
+	private Long id;
 	private String username;
 	private String password;
 	private String email;
@@ -36,12 +36,12 @@ public class SysUser implements java.io.Serializable {
 		this.createTime = createTime;
 	}
 
-	public Long getUserId() {
-		return this.userId;
+	public Long getId() {
+		return this.id;
 	}
 
-	public void setUserId(Long userId) {
-		this.userId = userId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 	public String getUsername() {
 		return this.username;

@@ -10,7 +10,7 @@ import java.util.Date;
  */
 public class SysRole implements java.io.Serializable {
 
-	private Long roleId;
+	private Long id;
 	private String roleName;
 	private String remark;
 	private Long createUserId;
@@ -27,12 +27,12 @@ public class SysRole implements java.io.Serializable {
 		this.createTime = createTime;
 	}
 
-	public Long getRoleId() {
-		return this.roleId;
+	public Long getId() {
+		return this.id;
 	}
 
-	public void setRoleId(Long roleId) {
-		this.roleId = roleId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 	public String getRoleName() {
 		return this.roleName;

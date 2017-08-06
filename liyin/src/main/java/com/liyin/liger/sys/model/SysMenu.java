@@ -8,7 +8,7 @@ package com.liyin.liger.sys.model;
  */
 public class SysMenu implements java.io.Serializable {
 
-	private Long menuId;
+	private Long id;
 	private Long parentId;
 	private String name;
 	private String url;
@@ -31,12 +31,12 @@ public class SysMenu implements java.io.Serializable {
 		this.orderNum = orderNum;
 	}
 
-	public Long getMenuId() {
-		return this.menuId;
+	public Long getId() {
+		return this.id;
 	}
 
-	public void setMenuId(Long menuId) {
-		this.menuId = menuId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 	public Long getParentId() {
 		return this.parentId;

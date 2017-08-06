@@ -145,23 +145,23 @@
          <version>${mybatis-spring.version}</version>  
      </dependency>  
     <dependency>
-		<groupId>pagehelper</groupId>
+		<groupId>com.github.pagehelper</groupId>
 		<artifactId>pagehelper</artifactId>
 		<version>${pagehelper.version}</version>
 	</dependency>
 	<dependency>
-		<groupId>jsqlparser</groupId>
+		<groupId>com.github.jsqlparser</groupId>
 		<artifactId>jsqlparser</artifactId>
 		<version>${jsqlparser.version}</version>
 	</dependency>
      
      
      <!-- 导入java ee jar 包 -->  
-     <dependency>  
-         <groupId>javax</groupId>  
-         <artifactId>javaee-api</artifactId>  
-         <version>${javaee-api.verison}</version>  
-     </dependency>  
+<!--      <dependency>   -->
+<!--          <groupId>javax</groupId>   -->
+<!--          <artifactId>javaee-api</artifactId>   -->
+<!--          <version>${javaee-api.verison}</version>   -->
+<!--      </dependency>   -->
      <!-- 导入Mysql数据库链接jar包 -->  
      <dependency>  
          <groupId>mysql</groupId>  
@@ -249,8 +249,6 @@
 	    <version>${druid.version}</version>
 	</dependency>
      
-     
-
   </dependencies>
   
   
